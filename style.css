@@ -1,11 +1,14 @@
 
 .navigation { 
     background: black;
-    height: 18px00px; 
+    height: 400px; 
     width: 100%;
-    margin: 20;
+    margin: 20px;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    top: ;
+    left: ;
   }
 
 .navItems a {
@@ -37,9 +40,14 @@ reset browser agent css setting as belwo
     background-position: bottom center;
     width: 100%;
     height: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+    top: 200px;
   }
 
   #banner .content h2 {
+    margin: 20px auto;
     position: relative;
     top: 50px;
     width: 400px;
@@ -50,6 +58,7 @@ reset browser agent css setting as belwo
     text-align: center;
     border: 3px solid white;
     border-radius: 15px;
+    
    }
 
   .sectionTitle {
@@ -156,6 +165,9 @@ margin: 20px;
 
 .outline{
   border: 20px ridge rgba(28,110,164,0.77);
+width: 1000px;
+  margin: 40px;
+ 
 }
 
   /*
