@@ -1,4 +1,6 @@
 
+/*Z-index property controls how far back or how far forward an element should appear on the web page when elements overlap*/
+
 .navigation { 
     background: black;
     height: 400px; 
@@ -9,6 +11,13 @@
     position: fixed;
     top: ;
     left: ;
+    z-index: 10;
+    
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 28px;
+    font-size: 24px;
   }
 
 .navItems a {
@@ -33,6 +42,8 @@ reset browser agent css setting as belwo
     box-sizing: border-box;
   }
 
+/*fixed and absolute positioned elements are removed from the document flow, when a user scrolls, these elements will stay at their specified offset position
+Sticky value is a position value that keeps an element in the document flow as the user scrolls*/
 
   #banner {
    background-image: url(./Images/mountain-1.webp);
@@ -265,4 +276,15 @@ selecting nested elements
         text-decoration: none;
         margin: 10px;
         text-align: center;
+      }
+
+      .inlineBlock{
+        display: inline-block;
+        margin: 28px;
+        font-size: 24px;
+        background-color: gray;
+        height: 100px;
+        width: 200px;
+        color: white;
+        border: 5px solid lightblue ;
       }
