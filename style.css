@@ -1,0 +1,252 @@
+
+.navigation { 
+    background: black;
+    height: 18px00px; 
+    width: 100%;
+    margin: 20;
+    padding: 20px;
+    text-align: center;
+  }
+
+.navItems a {
+  font-weight: 200;
+  letter-spacing: 4px;
+  color: white;
+  font-size: 40px;
+  
+}
+
+/*
+reset browser agent css setting as belwo
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+  /*
+  makes sure that the dimensions of elements remains the same regardless of border width and padding.
+  */
+  *{
+    box-sizing: border-box;
+  }
+
+
+  #banner {
+   background-image: url(./Images/mountain-1.webp);
+    background-size: cover;
+    background-position: bottom center;
+    width: 100%;
+    height: 700px;
+  }
+
+  #banner .content h2 {
+    position: relative;
+    top: 50px;
+    width: 400px;
+    margin: 0 auto;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 15px;
+   }
+
+  .sectionTitle {
+    text-transform: uppercase;
+    text-align: center;
+    color: green;  
+  }
+
+  #tableSpecial {
+    font-family: cursive;
+    background-color: lightblue;
+    opacity: 0.5;
+}
+div{
+  padding: 20px 20px;
+}
+
+h1{
+  color: #466995;
+  padding: 3px 3px 3px 3px;
+  font-family: 'Oswald', sans-serif;
+ }
+
+h2{
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+   } 
+
+h3{
+  
+
+}
+
+h4{
+
+}
+
+h5 {
+    color: yellow;
+  }
+
+/*
+padding can be combines as below, clockwise, top, right, bottom, left
+when three values are used, they refer to top, right and left, and the third will be bottom
+if two values are used, they refer to first value is both top and botom, then second value is left and right
+*/
+
+p {
+  color: #333;
+  font-size: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  min-width: 200px;
+  max-width: 2000px;
+  min-height: 200px;
+  max-height: 300px;
+}
+
+.hiddenParagraph{
+  visibility: hidden;
+}
+.displayNoneParagraph{
+  display: none;
+}
+
+  /*
+  The attribute selector can be used to target multople attribute names and elements
+  the code below targets a attribute that contains string loomistravel*
+  */
+  
+  a[href*='loomistravel']
+  {
+    color: orange;
+  }
+
+.survey{
+text-align: center;
+position: static;
+  }
+
+
+  .answer{
+border: 1px solid blue;
+margin: 20px;
+  }
+  
+.survey h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  
+}
+  
+  .answer:hover {
+    background: #C0D6DF;
+  }
+
+.outline{
+  border: 20px ridge rgba(28,110,164,0.77);
+}
+
+  /*
+Can make appearances of elements or inputs change, example: when you hover, fill a form and button changes color once all info is input. This is called pseudo class selector
+example
+NB didnt work as anticipated
+*/
+
+a:hover {
+    color: green;
+}
+
+/*
+ids have higher hierachy compared to classes - use them sparingly, see below
+*/
+  
+  .author-class {
+    color: pink;
+  }
+  
+  #author-id {
+    color: cornflowerblue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+/* 
+selecting nested elements
+*/
+
+.columnHeads th {
+    color: blue;
+    list-style: square;
+}
+
+/*
+.nestedList li{
+    color: blue;
+    }
+*/
+
+    /* 
+    combining selectors
+    */
+
+    h5, .columnHeads{
+        font-family: Georgia;
+    }
+
+    .tableExample{
+      background-image: url(./Images/mountain-1.webp) 
+    }
+      
+.scroller{
+  height: 1000px;
+  padding: ;
+  overflow: scroll;
+}
+       /* 
+       the img of mountain is showing but table is small
+       */
+    }
+    .caption {
+       
+      }
+
+      /* 
+      !important overulles any other style
+      */
+
+     /* .importantColor{
+        color: gray !important;
+      }
+      */
+      .footerContent {
+        border: 4px solid lightblue;
+        background-color: lightgray;
+        font-size: 18px;
+        padding: 40px 0;
+        position: relative;
+        text-align: center;
+      }
+
+      .footerContent a:hover{
+        background: white;
+        border: 4px solid yellow;
+        color: lightgreen;
+      }
+      .footerContent a {
+        background: blue;
+        border: 2px solid yellow;
+        border-radius: 5px;
+        color: white;
+        display: inline-block;
+        padding: 14px;
+        text-decoration: none;
+        margin: 10px;
+        text-align: center;
+      }
