@@ -130,8 +130,12 @@ p {
   }
 
 .survey{
+  width: 500px;
 text-align: center;
-position: static;
+position: relative;
+top: 0px;
+left: 120px;
+background-color: #C9E9D2;
   }
 
 
