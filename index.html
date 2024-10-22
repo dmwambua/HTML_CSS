@@ -1,168 +1,277 @@
 <!--Declaring HTML file-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Blog</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
- <!--Navigation-->
- <nav class="navigation">
-    <img src="./Images/Loomis_Travel_Logo.jpeg" alt="">
+  <!--Navigation-->
+  <nav class="navigation">
+    <img src="./Images/Loomis_Travel_Logo.jpeg" alt="" />
     <ul class="navItems">
-        <li><a href="#Guide">Guide</a></li> 
-        <li><a href="#Categories">Categories</a></li> 
-        <li><a href="#About Us">About Us</a></li> 
-  </ul>
+      <li><a href="#Guide">Nav Item 1</a></li>
+      <li><a href="#Categories">Nav Item 2</a></li>
+      <li><a href="#About Us">Nav Item 3</a></li>
+    </ul>
+  </nav>
 
- </nav>
-   
-
-      <div id="banner">
-        <div class="content">
-            <h2>Merchandising</h2>
-        </div>
-      </div>
-<!--Lists and images-->
-
-    <div id="Guide">
-        <h1 class="sectionTitle">Guide to our catalog</h1>
-        <p>This Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus egestas massa? Torquent mauris praesent odio eros quam. Leo consectetur orci gravida ultricies est cubilia. Pretium lobortis duis nullam scelerisque facilisis taciti. Nisi ullamcorper per ipsum integer suspendisse.</p>
+  <div id="banner">
+    <div class="content">
+      <h2>Text with background image set in CSS. Color is rgba with opacity of 0.7 so the background shows through a bit
+      </h2>
     </div>
-    <div id="Categories">
-        <p>These are categories you can choose from</p>
-        <ul class="merchandise">
-            <li>Luggage</li>
-            <li>Apparrel</li>
-            <li>Shoes</li>
-        </ul>
-    </div>
-    <div id="Luggage">
-        <h2 class="sectionTitle">Travel With Ease</h2>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus egestas massa? Torquent mauris praesent odio eros quam. Leo consectetur orci gravida ultricies est cubilia. Pretium lobortis duis nullam scelerisque facilisis taciti. Nisi ullamcorper per ipsum integer suspendisse.</p>
-        <img src="./Images/Loomis_Travel_Luggage.webp" alt="">
-    </div>
-    <div id="Apparrel">
-        <h2 class="sectionTitle">Apparrel</h2>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus egestas massa? Torquent mauris praesent odio eros quam. Leo consectetur orci gravida ultricies est cubilia. Pretium lobortis duis nullam scelerisque facilisis taciti. Nisi ullamcorper per ipsum integer suspendisse.</p>
-        <img src="./Images/Nike_Shirt.webp" alt="">
-    </div>
-    <div id="Shoes">
-        <h2 class="sectionTitle">Shoes</h2>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus egestas massa? Torquent mauris praesent odio eros quam. Leo consectetur orci gravida ultricies est cubilia. Pretium lobortis duis nullam scelerisque facilisis taciti. Nisi ullamcorper per ipsum integer suspendisse.</p>
-        <img src="./Images/Nike shoe.webp" alt="">
-        
-        <p>To learn more, go to <a href="https://loomistravel.com/">Loomis Travel</a> </p> 
-        <p>The empty space below is because it is occupied by .hiddenParagraph{
-            visibility: hidden;
-          }</p>
-        <p class="hiddenParagraph">This paragraph will be hidden.</p>  
-        <p class="displayNoneParagraph">This paragraph will be set to display: none.</p>                                       
-    </div>
-    <div>
-        <!--Creating tables-->
-        <div class="search"> Search the table</div>
-        <h2 id= "tableSpecial" >How to create a table</h2>
-        <table class="tableExample">
-            <thead>
-                <tr>
-                    <th>Colunm 1</th>
-                    <th>Column 2</th>
-                    <th>Colunm 3</th>
-                    <th>Column 4</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="columnHeads">
-                    <th>Row 1</th>
-                    <td>10</td>
-                    <td>11</td>
-                    <td>12</td>
-                </tr>
-                <tr class="columnHeads">
-                    <th>Row 2</th>
-                    <td>20</td>
-                    <td>21</td>
-                    <td>22</td>
-                </tr>
-                <tr class="columnHeads">
-                    <th>Row 3</th>
-                    <td>30</td>
-                    <td>31</td>
-                    <td>32</td>
-                </tr>
-                
-                
-            </tbody>
-            
-        </table>
-    </div>
-    <div>
-        <ul class="nestedList">
-            <li>Nested List 1</li>
-            <li>Nested List 3</li>
-            <li>Nested List 3</li>
-        </ul>
-        <p class="importantColor">This font color is set to !important</p>
-    </div>
+  </div>
+  <!--Lists and images-->
 
-    <!--Figures and captions-->
-<div id="Figure">
-    <figure>
-        <img src="./Images/Loomis_Travel_Luggage.webp" alt="">
-        <figcaption>Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus egestas massa? Torquent mauris praesent odio eros quam. Leo consectetur orci gravida ultricies est cubilia. Pretium lobortis duis nullam scelerisque facilisis taciti. Nisi ullamcorper per ipsum integer suspendisse.</figcaption>
-    </figure>
-   <!-- <aside>represents content that is tangentially related to the content around it like sidebars--> 
-    <aside>
-        <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus egestas massa? Torquent mauris praesent odio eros quam. Leo consectetur orci gravida ultricies est cubilia. Pretium lobortis duis nullam scelerisque facilisis taciti. Nisi ullamcorper per ipsum integer suspendisse.</p>
-    </aside>
-</div>
-<div class="gallery">
-    <img src="./Images/mountain-1.webp" alt="">
-    <p class="scroller">
-Lorem ipsum odor amet, consectetuer adipiscing elit. Sem platea mollis aliquet, dictum ridiculus proin. Malesuada nisi consectetur nullam laoreet; ex semper consequat semper. Metus dui torquent et sed interdum et magna leo ullamcorper. Hac dictum fringilla massa felis consectetur. Bibendum non varius pulvinar dignissim elementum efficitur netus. Tellus in adipiscing gravida cras eros.
-
-Iaculis semper pretium fermentum quis; rhoncus dictum proin eget. Egestas amet primis morbi, orci gravida efficitur sociosqu metus. Purus torquent mollis venenatis semper nisl suscipit euismod luctus himenaeos. Primis habitasse morbi vitae quisque morbi. Ultricies lacus id ligula molestie congue. Integer neque eu vel maximus venenatis sed vel conubia. Faucibus aliquam magnis ac volutpat sit porta vulputate. Tempor euismod sapien ullamcorper ligula porta cubilia sollicitudin.
-
-Nullam amet praesent neque turpis vel placerat. Quisque phasellus ultrices etiam non mi lacinia auctor elit. Rhoncus efficitur odio porta lobortis, metus imperdiet? Ante interdum accumsan fringilla faucibus lectus parturient hendrerit etiam natoque. Vehicula quis sodales montes fusce volutpat mattis risus fermentum. Eleifend sed condimentum porta ad turpis. Accumsan nascetur elit suspendisse blandit ligula feugiat torquent curae nisi. Nulla commodo gravida urna duis sed quis; neque netus ipsum.
-
-Hac praesent efficitur a urna dis malesuada phasellus adipiscing. Suscipit aliquet cras donec blandit pellentesque netus commodo. Torquent fusce sit vel facilisi lacus id. Tempor velit vehicula vulputate rutrum donec ut cubilia. Augue lectus proin elit hendrerit turpis. Ac malesuada enim consequat consequat ligula.
-
-Facilisi id gravida sociosqu mus faucibus! Magna eu justo taciti; quisque dolor nam. Dictumst semper nunc gravida; rhoncus sodales sagittis aliquet. Sed sociosqu magnis orci malesuada pellentesque. Adipiscing iaculis nulla in sollicitudin vivamus venenatis. Duis efficitur tempus; non nostra eleifend luctus. Neque diam habitant pretium dignissim velit justo velit mauris interdum. Arcu metus sodales quis tincidunt dapibus iaculis varius.
+  <div id="Guide">
+    <h1 class="sectionTitle">Uppercased H1 Tag with paragraph</h1>
+    <p>
+      This Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis
+      metus himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue
+      vivamus egestas massa?
     </p>
-</div>
+  </div>
+  <div>
+    <p>t’s best to use a <span class="spanExample">SPAN </span>element when you want to target a specific piece of
+      content that is inline, or on the same line as other text.</p>
+    <p><em>em> tags are used to emphasize the text to produce the following:</em></p>
+    <p><strong>Strong tag is used to indicate that the text is important </strong></p>
+    <p>A line break does not have a clossing tag and is used to separate parts on a sentence into different lines as
+      below</p>
+    <p>he <br> element is used in HTML to insert line breaks in text, making it useful for <br>formatting addresses,
+      <br>poems, <br>and song lyrics where line division is significant
+    </p>
+  </div>
+  <div id="unorderedList">
+    <p>The <strong>ul</strong> and <strong>li</strong> elements are used together in HTML to create unordered lists,
+      where <strong>ul</strong> serves as a container for the list and <strong>li</strong> defines each individual list
+      item within it, typically displayed with bullet points by default</p>
+    <ul class="merchandise">
+      <li>Unordered list item 1</li>
+      <li>Unordered list item 3</li>
+      <li>Unordered list item 3</li>
+    </ul>
+  </div>
+  <div>
+    <p>Ordered lists <strong>ol</strong> are like unordered lists, except that each list item is numbered. They are
+      useful when you need to list different steps in a process or rank items for first to last.
+    <ol>
+      <li>Ordered list Item 1</li>
+      <li>Ordered list Item 2</li>
+      <li>Ordered list Item 3</li>
+    </ol>
+    </p>
+  </div>
+  <div>
+    <p>Links can be set to open on the same page such as <a href="https://www.w3schools.com/html/" >W3 Schools HTML Tutorial</a> or on a different window by adding target = "_blank"such as <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3 CSS Tutorial</a></p>
+  </div>
+  <div id="Luggage">
+    <h2 class="sectionTitle">Div Section 1 with p and img</h2>
+    <p>
+      The <strong>image</strong> tag has no closing tag and follows the syntax: img src="image-location.jpg" />.
+      The alt attribute provides descriptive text for images, enhancing accessibility and SEO, and appears if the image
+      fails to load. It takes the format img src="#" alt="A field of yellow sunflowers" />
+    </p>
+    <img src="./Images/Loomis_Travel_Luggage.webp" alt="" />
+    <figcaption class="figureCaption">This is a figcaption. font-style: italic;</figcaption>
+  </div>
+  <div id="Apparrel">
+    <h2 class="sectionTitle">Div Section 2 with p and img</h2>
+    <p>
+      Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus
+      himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus
+      egestas massa?
+    </p>
+    <img src="./Images/Nike_Shirt.webp" alt="" />
+    <figcaption class="figureCaption">This is a figcaption. font-style: italic;</figcaption>
+
+  </div>
+  <div id="Shoes">
+    <h2 class="sectionTitle">Div Section 3 with p and img</h2>
+    <p>
+      Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis metus
+      himenaeos pharetra; nisl nisi. Lorem suspendisse tempor augue vivamus
+      egestas massa?
+    </p>
+    <img src="./Images/Nike shoe.webp" alt="" />
+    <figcaption class="figureCaption">This is a figcaption. font-style: italic;</figcaption>
+
+    <div class="aside">
+      <h2>Aside Tag</h2>
+      <aside>The HTML aside tag is used for content indirectly related to the main content, like sidebars, ads, or
+        supplementary info. It helps define tangentially related content, enhancing semantic structure and SEO. To learn
+        more, go to
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/aside">MDN Web Docs</a>
+      </aside>
+    </div>
+
+    <p>
+      The empty space below is because it is occupied by .hiddenParagraph{
+      visibility: hidden; }
+    </p>
+    <p class="hiddenParagraph">This paragraph will be hidden.</p>
+    <p class="displayNoneParagraph">
+      This paragraph will be set to display: none.
+    </p>
+  </div>
+  <div>
+    <div class="videoExample">
+      <p>Unlike the <strong>img</strong> element however, the <strong>video</strong> element requires an opening and a
+        closing tag. Width and height attributes are used to set the size of the video</p>
+      <p>The controls attribute instructs the browser to include basic video controls such as pausing and playing.</p>
+      <p>Notethat the video tag cannot directly play YouTube videos intead, use iframe</p>
+
+      <video src="https://www.youtube.com/watch?v=mg9qksPqHZk&t=9s" width="640" height="640" controls>Video not supported</video>
+    </div>
     
+    <!--Creating tables-->
+    <h2>Creating a table</h2>
+    <table class="tableExample">
+      <thead>
+        <tr>
+          <th>Colunm 1</th>
+          <th>Column 2</th>
+          <th>Colunm 3</th>
+          <th>Column 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="columnHeads">
+          <th>Row 1</th>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr class="columnHeads">
+          <th>Row 2</th>
+          <td>20</td>
+          <td>21</td>
+          <td>22</td>
+        </tr>
+        <tr class="columnHeads">
+          <th>Row 3</th>
+          <td>30</td>
+          <td>31</td>
+          <td>32</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<div class="survey">
+  <div class="gallery">
+    <h1>Section with image and a scrollable paragraph</h1>
+    <img src="./Images/mountain-1.webp" alt="" />
+    <p class="scroller">
+      Lorem ipsum odor amet, consectetuer adipiscing elit. Sem platea mollis
+      aliquet, dictum ridiculus proin. Malesuada nisi consectetur nullam
+      laoreet; ex semper consequat semper. Metus dui torquent et sed interdum
+      et magna leo ullamcorper. Hac dictum fringilla massa felis consectetur.
+      Bibendum non varius pulvinar dignissim elementum efficitur netus. Tellus
+      in adipiscing gravida cras eros. Iaculis semper pretium fermentum quis;
+      rhoncus dictum proin eget. Egestas amet primis morbi, orci gravida
+      efficitur sociosqu metus. Purus torquent mollis venenatis semper nisl
+      suscipit euismod luctus himenaeos. Primis habitasse morbi vitae quisque
+      morbi. Ultricies lacus id ligula molestie congue. Integer neque eu vel
+      maximus venenatis sed vel conubia. Faucibus aliquam magnis ac volutpat
+      sit porta vulputate. Tempor euismod sapien ullamcorper ligula porta
+      cubilia sollicitudin. Nullam amet praesent neque turpis vel placerat.
+      Quisque phasellus ultrices etiam non mi lacinia auctor elit. Rhoncus
+      efficitur odio porta lobortis, metus imperdiet? Ante interdum accumsan
+      fringilla faucibus lectus parturient hendrerit etiam natoque. Vehicula
+      quis sodales montes fusce volutpat mattis risus fermentum. Eleifend sed
+      condimentum porta ad turpis. Accumsan nascetur elit suspendisse blandit
+      ligula feugiat torquent curae nisi. Nulla commodo gravida urna duis sed
+      quis; neque netus ipsum. Hac praesent efficitur a urna dis malesuada
+      phasellus adipiscing. Suscipit aliquet cras donec blandit pellentesque
+      netus commodo. Torquent fusce sit vel facilisi lacus id. Tempor velit
+      vehicula vulputate rutrum donec ut cubilia. Augue lectus proin elit
+      hendrerit turpis. Ac malesuada enim consequat consequat ligula. Facilisi
+      id gravida sociosqu mus faucibus! Magna eu justo taciti; quisque dolor
+      nam. Dictumst semper nunc gravida; rhoncus sodales sagittis aliquet. Sed
+      sociosqu magnis orci malesuada pellentesque. Adipiscing iaculis nulla in
+      sollicitudin vivamus venenatis. Duis efficitur tempus; non nostra
+      eleifend luctus. Neque diam habitant pretium dignissim velit justo velit
+      mauris interdum. Arcu metus sodales quis tincidunt dapibus iaculis
+      varius.
+    </p>
+  </div>
+
+  <div class="survey">
     <h2>Question 1</h2>
-    <h2><strong>Welcome</strong> to our Survey. How do you like our website?</h2>
-    <div class="answer"><h3>Love it</h3></div>
-    <div class="answer"><h3>Neutral</h3></div>
-    <div class="answer"><h3>Not at all</h3></div>
-</div>
+    <h2>
+      <strong>Strong Style ignored in facor of H2 tag CSS. </strong> How to use borders and background color
+    </h2>
+    <div class="answer">
+      <h3>Love it</h3>
+    </div>
+    <div class="answer">
+      <h3>Neutral</h3>
+    </div>
+    <div class="answer">
+      <h3>Not at all</h3>
+    </div>
+  </div>
 
-<div>
+  <div>
     <div class="inlineBlock">Inline Block 1</div>
-    <<div class="inlineBlock">Inline Block 2</div>
-    <div class="inlineBlock">Inline Block 3</div>
-</div>
+    < <div class="inlineBlock">Inline Block 2
+  </div>
+  <div class="inlineBlock">Inline Block 3</div>
+  </div>
 
-<!--Check out cool html css generator here https://htmlcheatsheet.com/css/ -->
+  <div id="floatLeft">
+    <li>Display Floa1 Left</li>
+    <li>Display Floa1 Left</li>
+  </div>
 
-<!--Footer-->
-<div class="outline">
-    <p>ridged outline</p>
-</div>
+  <!--Check out cool html css generator here https://htmlcheatsheet.com/css/ -->
+  <div>
+    <div class="BackgroundAqua">
+      <h2>Background: Aqua</h2>
+    </div>
+    <div class="BackgroundGreen">
+      <h2>Background: Lightgreen</h2>
+    </div>
+    <div class="BackgroundHSL">
+      <h2>background-color: hsl(155, 100%, 25%)</h2>
+    </div>
+  </div>
+
+
+
+  <div>
+    <h1>Color pallette</h1>
+    <div class="color">
+      <div class="box red"></div>
+      <div class="box green"></div>
+      <div class="box blue"></div>
+      <div class="box black"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <!--Footer-->
 
   <footer class="footerContent">
-    
     <a href="#">Contact Us</a>
     <a href="#">Locations</a>
     <a href="#">Policies</a>
-    <h5 class='author-class' id= 'author-id'>By: Dr. Wambua</h5>
+    <h5 class="author-class" id="author-id">By: Dr. Wambua</h5>
     <h6>&copy; Copyright. All Rights Reserved.</h6>
   </footer>
 </body>
+
 </html>

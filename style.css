@@ -1,290 +1,386 @@
-
 /*Z-index property controls how far back or how far forward an element should appear on the web page when elements overlap*/
 
-.navigation { 
-    background: black;
-    height: 400px; 
-    width: 100%;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    top: ;
-    left: ;
-    z-index: 10;
-    
-  }
-  nav ul li {
-    display: inline-block;
-    margin: 28px;
-    font-size: 24px;
-  }
+.navigation {
+  background: black;
+  height: 400px;
+  width: 100%;
+  margin: 0px;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+}
+nav ul li {
+  display: inline-block;
+  margin: 28px;
+  font-size: 24px;
+}
 
 .navItems a {
   font-weight: 200;
   letter-spacing: 4px;
   color: white;
   font-size: 40px;
-  
+  hover: green;
+}
+
+a:hover {
+  color: green;
 }
 
 /*
 reset browser agent css setting as belwo
 */
-*{
+* {
   margin: 0;
   padding: 0;
 }
-  /*
+/*
   makes sure that the dimensions of elements remains the same regardless of border width and padding.
   */
-  *{
-    box-sizing: border-box;
-  }
-
-/*fixed and absolute positioned elements are removed from the document flow, when a user scrolls, these elements will stay at their specified offset position
-Sticky value is a position value that keeps an element in the document flow as the user scrolls*/
-
-  #banner {
-   background-image: url(./Images/mountain-1.webp);
-    background-size: cover;
-    background-position: bottom center;
-    width: 100%;
-    height: 700px;
-    margin: 20px auto;
-    padding: 20px;
-    position: relative;
-    top: 200px;
-  }
-
-  #banner .content h2 {
-    margin: 20px auto;
-    position: relative;
-    top: 50px;
-    width: 400px;
-    margin: 0 auto;
-    color: white;
-    padding: 20px;
-    font-size: 40px;
-    text-align: center;
-    border: 3px solid white;
-    border-radius: 15px;
-    
-   }
-
-  .sectionTitle {
-    text-transform: uppercase;
-    text-align: center;
-    color: green;  
-  }
-
-  #tableSpecial {
-    font-family: cursive;
-    background-color: lightblue;
-    opacity: 0.5;
+* {
+  box-sizing: border-box;
 }
-div{
+div {
   padding: 20px 20px;
 }
 
-h1{
+h1 {
   color: #466995;
-  padding: 3px 3px 3px 3px;
-  font-family: 'Oswald', sans-serif;
- }
-
-h2{
-    padding-top: 25px;
-    padding-right: 30px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-   } 
-
-h3{
-  
-
+  padding: 20px 3px 20px 3px;
+  font-family: "Oswald", sans-serif;
+  font-size: 60px;
+  font-weight: bold;
 }
 
-h4{
+h2 {
+  padding-top: 25px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  color: blue;
+}
 
+h3 {
+}
+
+h4 {
 }
 
 h5 {
-    color: yellow;
-  }
-
+  color: yellow;
+}
+p {
+  color: #333;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  min-width: 200px;
+  max-width: 100%px;
+  min-height: 80px;
+  max-height: 300px;
+}
 /*
-padding can be combines as below, clockwise, top, right, bottom, left
+padding can be combined as below, clockwise, top, right, bottom, left
 when three values are used, they refer to top, right and left, and the third will be bottom
 if two values are used, they refer to first value is both top and botom, then second value is left and right
 */
 
-p {
-  color: #333;
-  font-size: 40px;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-  min-width: 200px;
-  max-width: 2000px;
-  min-height: 200px;
-  max-height: 300px;
+
+/*fixed and absolute positioned elements are removed from the document flow, when a user scrolls, these elements will stay at their specified offset position
+Sticky value is a position value that keeps an element in the document flow as the user scrolls*/
+
+#banner {
+  background-image: url(./Images/mountain-1.webp);
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 700px;
+  padding: 20px;
+  position: relative;
+  top: 200px;
+  margin: 200px 0 220px;
 }
 
-.hiddenParagraph{
+#banner .content h2 {
+  margin: 20px auto;
+  position: relative;
+  top: 50px;
+  width: 800px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  font-size: 60px;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+ ul li, ol li{
+  font-size: 40px;
+}
+
+.spanExample {
+  color: blue; 
+  text-decoration: underline;
+  cursor: pointer; 
+}
+
+
+
+.sectionTitle {
+  text-align: center;
+  color: green; 
+}
+.figureCaption{
+font-size: 30px;
+font-style: italic;
+}
+.aside{
+  font-size: 30px;
+}
+
+.videoExample{
+  
+}
+
+
+#tableSpecial {
+  font-family: cursive;
+  background-color: lightblue;
+  opacity: 0.5;
+}
+
+.hiddenParagraph {
   visibility: hidden;
 }
-.displayNoneParagraph{
+.displayNoneParagraph {
   display: none;
 }
+/*Table CSS
+Alternating row colors are applied for better readability using nth-of-type(even)
+.active-row class highlights specific rows by changing the text color and making the font bold */
 
-  /*
+.tableExample {
+  border-collapse: collapse;
+  margin: 25px 25px;
+  font-size: 40px;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tableExample thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.tableExample th, .tableExample td {
+  padding: 12px 15px;
+}
+
+.tableExample tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tableExample tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tableExample tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.tableExample tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+/*
   The attribute selector can be used to target multople attribute names and elements
   the code below targets a attribute that contains string loomistravel*
   */
-  
-  a[href*='loomistravel']
-  {
-    color: orange;
-  }
 
-.survey{
+a[href*="loomistravel"] {
+  color: orange;
+}
+
+.survey {
   width: 500px;
-text-align: center;
-position: relative;
-top: 0px;
-left: 120px;
-background-color: #C9E9D2;
-  }
+  text-align: center;
+  position: relative;
+  top: 0px;
+  left: 120px;
+  background-color: #c9e9d2;
+}
 
+.answer {
+  border: 1px solid blue;
+  margin: 20px;
+}
 
-  .answer{
-border: 1px solid blue;
-margin: 20px;
-  }
-  
 .survey h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
-  
-}
-  
-  .answer:hover {
-    background: #C0D6DF;
-  }
-
-.outline{
-  border: 20px ridge rgba(28,110,164,0.77);
-width: 1000px;
-  margin: 40px;
- 
+  margin-top: 20px;
 }
 
-  /*
-Can make appearances of elements or inputs change, example: when you hover, fill a form and button changes color once all info is input. This is called pseudo class selector
+.answer:hover {
+  background: #c0d6df;
+}
+
+/*Can make appearances of elements or inputs change, example: when you hover, fill a form and button changes color once all info is input. This is called pseudo class selector
 example
 NB didnt work as anticipated
 */
 
-a:hover {
-    color: green;
-}
 
 /*
 ids have higher hierachy compared to classes - use them sparingly, see below
 */
-  
-  .author-class {
-    color: pink;
-  }
-  
-  #author-id {
-    color: cornflowerblue;
-    font-size: 18px;
-    font-weight: bold;
-  }
+.color {
+  display: flex;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+}
+
+
+
+.author-class {
+  color: pink;
+}
+
+#author-id {
+  color: cornflowerblue;
+  font-size: 18px;
+  font-weight: bold;
+}
 /* 
 selecting nested elements
 */
 
 .columnHeads th {
-    color: blue;
-    list-style: square;
+  color: blue;
+  list-style: square;
 }
 
-/*
-.nestedList li{
-    color: blue;
-    }
-*/
-
-    /* 
+/* 
     combining selectors
     */
 
-    h5, .columnHeads{
-        font-family: Georgia;
-    }
+h5,
+.columnHeads {
+  font-family: Georgia;
+}
 
-    .tableExample{
-      background-image: url(./Images/mountain-1.webp) 
-    }
-      
-.scroller{
+.tableExample {
+  background-image: url(./Images/mountain-1.webp);
+}
+
+.scroller {
   height: 1000px;
   padding: ;
   overflow: scroll;
 }
-       /* 
-       the img of mountain is showing but table is small
-       */
-    }
-    .caption {
-       
-      }
 
-      /* 
-      !important overulles any other style
-      */
+.inlineBlock {
+  display: inline-block;
+  margin: 28px;
+  font-size: 24px;
+  background-color: gray;
+  height: 100px;
+  width: 200px;
+  color: white;
+  border: 5px solid lightblue;
+}
 
-     /* .importantColor{
-        color: gray !important;
-      }
-      */
-      .footerContent {
-        border: 4px solid lightblue;
-        background-color: lightgray;
-        font-size: 18px;
-        padding: 40px 0;
-        position: relative;
-        text-align: center;
-      }
+#floatLeft li {
+  display: inline-block;
+  float: left;
+  padding: 28px;
+  font-size: 24px;
+  background-color: gray;
+  height: 50px;
+  width: 200px;
+  color: white;
+  border: 5px solid lightblue;
+}
+/*Foreground and background color*/
+.footerContent {
+  border: 4px solid lightblue;
+  background-color: lightgray;
+  font-size: 18px;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+  margin: 40px;
+  margin: 20px;
+  font: 18px:
+}
 
-      .footerContent a:hover{
-        background: white;
-        border: 4px solid yellow;
-        color: lightgreen;
-      }
-      .footerContent a {
-        background: blue;
-        border: 2px solid yellow;
-        border-radius: 5px;
-        color: white;
-        display: inline-block;
-        padding: 14px;
-        text-decoration: none;
-        margin: 10px;
-        text-align: center;
-      }
+/*Background and color elements*/
+.BackgroundAqua{
+  background-color: aqua;
+  height: 200px;
+  margin: 20px; 
+  font-size: 28px;
+}
+.BackgroundGreen{
+  background-color: lightgreen;
+  height: 200px;
+  margin: 20px; 
+  font-size: 28px;
+}
 
-      .inlineBlock{
-        display: inline-block;
-        margin: 28px;
-        font-size: 24px;
-        background-color: gray;
-        height: 100px;
-        width: 200px;
-        color: white;
-        border: 5px solid lightblue ;
-      }
+/*HSL: HSL represents colors using hue (0-360°), saturation (0-100%), and lightness (0-100%) to describe type, intensity, and brightness.*/
+.BackgroundHSL{
+  background-color: hsl(155, 100%, 25%);
+  height: 200px;
+  margin: 20px; 
+  font-size: 28px;
+}
+
+.footerContent {
+  background-image: url(./Images/mountain-1.webp);
+}
+
+
+.footerContent a:hover {
+  background: white;
+  border: 4px solid yellow;
+  color: lightgreen;
+}
+.footerContent a {
+  background: blue;
+  border: 2px solid yellow;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  padding: 14px;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+}
