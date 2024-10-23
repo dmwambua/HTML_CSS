@@ -16,7 +16,7 @@
     <ul class="navItems">
       <li><a href="#Guide">Nav Item 1</a></li>
       <li><a href="#Categories">Nav Item 2</a></li>
-      <li><a href="#About Us">Nav Item 3</a></li>
+      <li><a href="./aboutMe.html">About Me</a></li>
     </ul>
   </nav>
 
@@ -26,9 +26,21 @@
       </h2>
     </div>
   </div>
-  <!--Lists and images-->
 
-  <div id="Guide">
+
+<div class="quickLinks">
+<h1>Quick Links</h1>
+
+  <ul>
+    <li><a href="#uppercassed">Upper cassing text</a></li>
+    <li><a href="#SpanStrongBr">Span, Strong and Br</a></li>
+    <li><a href="#unorderedList">Unordered List</a></li>
+  </ul>
+
+</div>
+
+  <!--Lists and images-->
+  <div id="uppercassed">
     <h1 class="sectionTitle">Uppercased H1 Tag with paragraph</h1>
     <p>
       This Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat duis
@@ -36,17 +48,19 @@
       vivamus egestas massa?
     </p>
   </div>
-  <div>
+
+  <div id="SpanStrongBr">
     <p>t’s best to use a <span class="spanExample">SPAN </span>element when you want to target a specific piece of
       content that is inline, or on the same line as other text.</p>
     <p><em>em> tags are used to emphasize the text to produce the following:</em></p>
     <p><strong>Strong tag is used to indicate that the text is important </strong></p>
-    <p>A line break does not have a clossing tag and is used to separate parts on a sentence into different lines as
+    <p>A line break does not have a closing tag and is used to separate parts on a sentence into different lines as
       below</p>
     <p>he <br> element is used in HTML to insert line breaks in text, making it useful for <br>formatting addresses,
       <br>poems, <br>and song lyrics where line division is significant
     </p>
   </div>
+
   <div id="unorderedList">
     <p>The <strong>ul</strong> and <strong>li</strong> elements are used together in HTML to create unordered lists,
       where <strong>ul</strong> serves as a container for the list and <strong>li</strong> defines each individual list
@@ -124,9 +138,15 @@
       <p>Unlike the <strong>img</strong> element however, the <strong>video</strong> element requires an opening and a
         closing tag. Width and height attributes are used to set the size of the video</p>
       <p>The controls attribute instructs the browser to include basic video controls such as pausing and playing.</p>
-      <p>Notethat the video tag cannot directly play YouTube videos intead, use iframe</p>
+      <p>Note that the video tag cannot directly play YouTube videos intead, use iframe</p>
 
-      <video src="https://www.youtube.com/watch?v=mg9qksPqHZk&t=9s" width="640" height="640" controls>Video not supported</video>
+      <video src="./videos/San Diego - 2.mp4" width="640" height="640" controls>Video not supported</video>
+    </div>
+
+    <div class="linkedImage">
+<p>An image can be linked to an extermal website by wrapping the <strong>img</strong> tag using an <strong>a</strong> tag like below. You can specify the width and height of the image <br></p>
+
+<a href="https://www.infragistics.com/community/blogs/b/d-coding/posts/developer-humor-coding-logic"><img src="./Images/CartoonDeveloperHumor.jpg" height="400" width="800" alt=""></a>
     </div>
     
     <!--Creating tables-->
@@ -204,7 +224,7 @@
   <div class="survey">
     <h2>Question 1</h2>
     <h2>
-      <strong>Strong Style ignored in facor of H2 tag CSS. </strong> How to use borders and background color
+      <strong>Strong Style ignored in favor of H2 tag CSS. </strong> How to use borders and background color
     </h2>
     <div class="answer">
       <h3>Love it</h3>
