@@ -134,13 +134,31 @@
     </p>
   </div>
   <div>
-    <div class="videoExample">
-      <p>Unlike the <strong>img</strong> element however, the <strong>video</strong> element requires an opening and a
-        closing tag. Width and height attributes are used to set the size of the video</p>
-      <p>The controls attribute instructs the browser to include basic video controls such as pausing and playing.</p>
-      <p>Note that the video tag cannot directly play YouTube videos intead, use iframe</p>
+    <div class="audioAndVideo">
+      <div class="videoExample">
+        <h1>Audio and Video</h1>
 
-      <video src="./videos/San Diego - 2.mp4" width="640" height="640" controls>Video not supported</video>
+       
+        <p>Unlike the <strong>img</strong> element however, the <strong>video</strong> element requires an opening and a
+          closing tag. Width and height attributes are used to set the size of the video</p>
+        <p>The controls attribute instructs the browser to include basic video controls such as pausing and playing.</p>
+        <p>Note that the video tag cannot directly play YouTube videos intead, use iframe</p>
+       
+        <h2>Video Clip</h2>
+
+         <video src="./videos/San Diego - 2.mp4" width="640" height="640" controls>Video not supported</video>
+      </div>
+      <div class="audioFile">
+
+        <h2>Audio File</h2>
+        <audio controls><source src="./Audio/KinduNiMwitilye.mp3" type="audio/mp3"></audio>
+        
+      </div>
+      <div>
+        <h2>Embeded gif</h2>
+        <p>Note that the embed semantic element can be used for any type of media, however it is depricated and and instead, img, audio and video elements should be used</p>
+        <embed src ="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif" />
+      </div>
     </div>
 
     <div class="linkedImage">
@@ -178,6 +196,18 @@
           <td>30</td>
           <td>31</td>
           <td>32</td>
+        </tr>
+        <tr>
+          <td colspan="2">colspan 2</td>   
+        </tr>
+        <tr>
+          <td rowspan="2">rowspan 2</td>
+         <td>1</td>
+         <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+         <td>1</td>
         </tr>
       </tbody>
     </table>
