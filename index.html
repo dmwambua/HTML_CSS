@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fashion Blog</title>
   <link rel="stylesheet" href="style.css" />
+  <!--the three links below are from Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -28,16 +33,16 @@
   </div>
 
 
-<div class="quickLinks">
-<h1>Quick Links</h1>
+  <div class="quickLinks">
+    <h1>Quick Links</h1>
 
-  <ul>
-    <li><a href="#uppercassed">Upper cassing text</a></li>
-    <li><a href="#SpanStrongBr">Span, Strong and Br</a></li>
-    <li><a href="#unorderedList">Unordered List</a></li>
-  </ul>
-
-</div>
+    <ul>
+      <li><a href="#uppercassed">Upper cassing text</a></li>
+      <li><a href="#SpanStrongBr">Span, Strong and Br</a></li>
+      <li><a href="#unorderedList">Unordered List</a></li>
+    </ul>
+    <hr>
+  </div>
 
   <!--Lists and images-->
   <div id="uppercassed">
@@ -48,6 +53,8 @@
       vivamus egestas massa?
     </p>
   </div>
+
+  <hr>
 
   <div id="SpanStrongBr">
     <p>t’s best to use a <span class="spanExample">SPAN </span>element when you want to target a specific piece of
@@ -61,6 +68,8 @@
     </p>
   </div>
 
+  <hr>
+
   <div id="unorderedList">
     <p>The <strong>ul</strong> and <strong>li</strong> elements are used together in HTML to create unordered lists,
       where <strong>ul</strong> serves as a container for the list and <strong>li</strong> defines each individual list
@@ -71,6 +80,9 @@
       <li>Unordered list item 3</li>
     </ul>
   </div>
+
+  <hr>
+
   <div>
     <p>Ordered lists <strong>ol</strong> are like unordered lists, except that each list item is numbered. They are
       useful when you need to list different steps in a process or rank items for first to last.
@@ -81,9 +93,17 @@
     </ol>
     </p>
   </div>
+
+  <hr>
+
   <div>
-    <p>Links can be set to open on the same page such as <a href="https://www.w3schools.com/html/" >W3 Schools HTML Tutorial</a> or on a different window by adding target = "_blank"such as <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3 CSS Tutorial</a></p>
+    <p>Links can be set to open on the same page such as <a href="https://www.w3schools.com/html/">W3 Schools HTML
+        Tutorial</a> or on a different window by adding target = "_blank"such as <a
+        href="https://www.w3schools.com/css/default.asp" target="_blank">W3 CSS Tutorial</a></p>
   </div>
+
+  <hr>
+
   <div id="Luggage">
     <h2 class="sectionTitle">Div Section 1 with p and img</h2>
     <p>
@@ -94,6 +114,9 @@
     <img src="./Images/Loomis_Travel_Luggage.webp" alt="" />
     <figcaption class="figureCaption">This is a figcaption. font-style: italic;</figcaption>
   </div>
+
+  <hr>
+
   <div id="Apparrel">
     <h2 class="sectionTitle">Div Section 2 with p and img</h2>
     <p>
@@ -105,6 +128,9 @@
     <figcaption class="figureCaption">This is a figcaption. font-style: italic;</figcaption>
 
   </div>
+
+  <hr>
+
   <div id="Shoes">
     <h2 class="sectionTitle">Div Section 3 with p and img</h2>
     <p>
@@ -114,6 +140,9 @@
     </p>
     <img src="./Images/Nike shoe.webp" alt="" />
     <figcaption class="figureCaption">This is a figcaption. font-style: italic;</figcaption>
+
+
+    <hr>
 
     <div class="aside">
       <h2>Aside Tag</h2>
@@ -138,35 +167,40 @@
       <div class="videoExample">
         <h1>Audio and Video</h1>
 
-       
+
         <p>Unlike the <strong>img</strong> element however, the <strong>video</strong> element requires an opening and a
           closing tag. Width and height attributes are used to set the size of the video</p>
         <p>The controls attribute instructs the browser to include basic video controls such as pausing and playing.</p>
         <p>Note that the video tag cannot directly play YouTube videos intead, use iframe</p>
-       
+
         <h2>Video Clip</h2>
 
-         <video src="./videos/San Diego - 2.mp4" width="640" height="640" controls>Video not supported</video>
+        <video src="./videos/San Diego - 2.mp4" width="640" height="640" controls>Video not supported</video>
       </div>
       <div class="audioFile">
 
         <h2>Audio File</h2>
-        <audio controls><source src="./Audio/KinduNiMwitilye.mp3" type="audio/mp3"></audio>
-        
+        <audio controls>
+          <source src="./Audio/KinduNiMwitilye.mp3" type="audio/mp3">
+        </audio>
+
       </div>
       <div>
         <h2>Embeded gif</h2>
-        <p>Note that the embed semantic element can be used for any type of media, however it is depricated and and instead, img, audio and video elements should be used</p>
-        <embed src ="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif" />
+        <p>Note that the embed semantic element can be used for any type of media, however it is depricated and and
+          instead, img, audio and video elements should be used</p>
+        <embed src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif" />
       </div>
     </div>
 
     <div class="linkedImage">
-<p>An image can be linked to an extermal website by wrapping the <strong>img</strong> tag using an <strong>a</strong> tag like below. You can specify the width and height of the image <br></p>
+      <p>An image can be linked to an extermal website by wrapping the <strong>img</strong> tag using an
+        <strong>a</strong> tag like below. You can specify the width and height of the image <br></p>
 
-<a href="https://www.infragistics.com/community/blogs/b/d-coding/posts/developer-humor-coding-logic"><img src="./Images/CartoonDeveloperHumor.jpg" height="400" width="800" alt=""></a>
+      <a href="https://www.infragistics.com/community/blogs/b/d-coding/posts/developer-humor-coding-logic"><img
+          src="./Images/CartoonDeveloperHumor.jpg" height="400" width="800" alt=""></a>
     </div>
-    
+
     <!--Creating tables-->
     <h2>Creating a table</h2>
     <table class="tableExample">
@@ -198,20 +232,23 @@
           <td>32</td>
         </tr>
         <tr>
-          <td colspan="2">colspan 2</td>   
+          <td colspan="2">colspan 2</td>
         </tr>
         <tr>
           <td rowspan="2">rowspan 2</td>
-         <td>1</td>
-         <td>1</td>
+          <td>1</td>
+          <td>1</td>
         </tr>
         <tr>
           <td>1</td>
-         <td>1</td>
+          <td>1</td>
         </tr>
       </tbody>
     </table>
   </div>
+
+
+  <hr>
 
   <div class="gallery">
     <h1>Section with image and a scrollable paragraph</h1>
@@ -251,6 +288,9 @@
     </p>
   </div>
 
+
+  <hr>
+
   <div class="survey">
     <h2>Question 1</h2>
     <h2>
@@ -267,18 +307,67 @@
     </div>
   </div>
 
+  <hr>
+
+  <div class="WordAndTextLayout">
+    <h2>This headline has a letter spacing of 10x</h2>
+    <p>This paragraph has a word spacing of 0.5em and the line heights between the paragraph lines has been set to 2 and
+      has been alighed to the right. Free font services, like <a href="https://fonts.google.com/" target="_blank">Google
+        Fonts </a> and <a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>, host fonts that you can link
+      to from your HTML document with a provided <strong>link</strong> element.</p>
+
+  </div>
+
+
+  <hr>
+
+  <div class="ExternalFonts">
+    <h2>Getting font from Google Fonts</h2>
+    <p>Navigate to Google Fonts and select the “Space Mono” font. In the list of style variations, find “Regular 400”
+      and click “+ Select this style”. Copy the provided <strong>embed link/code</strong> element, and paste it into the
+      <strong>head</strong> element inside index.html. Now you can use the font on CSS by simply adding font-family:
+      "Space Mono", monospace;</p>
+    <br>
+
+    <p>FYI: You can find CSS maned colors <a href="https://147colors.com/ target_blank">here</a>.</p>
+  </div>
+
+  <hr>
+
   <div>
     <div class="inlineBlock">Inline Block 1</div>
     < <div class="inlineBlock">Inline Block 2
   </div>
-  <div class="inlineBlock">Inline Block 3</div>
+
+  <hr>
+
+<div class="tooltip">
+  <h2>Old fashioned way of adding tooltips</h2>
+  <p>You can add a tooltip (info that you see on hover) by using the title element in the a tag like <a href="https://www.cloudsyte.com/" title="Cloudsyte is the comprehensive climate action and resilience implementation platform.">Cloudsyte</a> is the best platform got building sustainability and resilience action plans. Hovering over the word Cloudsyte gives you an info line below.</p>
+ 
+</div>
+
+<hr>
+
+
+  <div class="content">
+    <button>
+      Standard Button
+    </button>
+    <button class=" skeuomorphic">
+      Skeuomorphic
+    </button>
+    <button class=" flat">
+      Flat
+    </button>
   </div>
 
-  <div id="floatLeft">
-    <li>Display Floa1 Left</li>
-    <li>Display Floa1 Left</li>
-  </div>
+<br>
 
+
+
+
+  
   <!--Check out cool html css generator here https://htmlcheatsheet.com/css/ -->
   <div>
     <div class="BackgroundAqua">
@@ -292,7 +381,7 @@
     </div>
   </div>
 
-
+  <hr>
 
   <div>
     <h1>Color pallette</h1>
@@ -304,7 +393,7 @@
     </div>
   </div>
 
-
+  <hr>
 
 
 

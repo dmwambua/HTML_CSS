@@ -25,8 +25,14 @@ nav ul li {
   hover: green;
 }
 
+a[
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+]
 a:hover {
   color: green;
+  text-decoration: none;
 }
 
 /*
@@ -52,6 +58,7 @@ h1 {
   font-family: "Oswald", sans-serif;
   font-size: 60px;
   font-weight: bold;
+  font-family: Georgia, "Trebuchet MS", "Times New Roman", serif;
 }
 
 h2 {
@@ -84,6 +91,9 @@ p {
   max-width: 100%px;
   min-height: 80px;
   max-height: 300px;
+}
+strong{
+  color: orange;
 }
 /*
 padding can be combined as below, clockwise, top, right, bottom, left
@@ -233,6 +243,21 @@ a[href*="loomistravel"] {
 .answer:hover {
   background: #c0d6df;
 }
+.WordAndTextLayout h2{
+letter-spacing: 20px;
+}
+.WordAndTextLayout p {
+  word-spacing: 0.3em;
+  line-height: 1.4;
+  text-align: right;
+  }
+
+  .ExternalFonts h2 {
+    font-family: "Space Mono";
+  }
+  .ExternalFonts p {
+    font-family: "Space Mono", sans-serif;
+  }
 
 /*Can make appearances of elements or inputs change, example: when you hover, fill a form and button changes color once all info is input. This is called pseudo class selector
 example
@@ -306,6 +331,71 @@ h5,
   padding: ;
   overflow: scroll;
 }
+
+
+/*button CSS*/
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  height: 100px;
+  width: 400px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.skeuomorphic {
+  border: 4px solid #0c960c;
+  border-radius: 10px;
+  color: #F8F8F8;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;
+  background: linear-gradient(#1D1, #0ebc0e);
+  text-shadow: 0 -2px #0c960c;
+}
+
+.skeuomorphic:hover {
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+  background: #0ebc0e;
+  background: linear-gradient(#0ebc0e, #0c960c);
+  border-color: #064f06;
+}
+
+.skeuomorphic:active {
+  margin-top: 4px;
+  margin-bottom: -4px;
+  box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+  background: #0c960c;
+  background: linear-gradient(#0c960c, #0ebc0e);
+}
+
+.flat {
+  background-color: #1D1;
+  color: #fff;
+  border: 4px solid #12dd23;
+  border-radius: 10px;
+}
+
+.flat:hover {
+  background-color: #0c960c;
+  transition: background-color .15s, font-size .15s;
+  font-size: 18px;
+}
+
+.flat:active {
+  border-color: #fff;
+}
+
+/*end button CSS*/
+
 
 .inlineBlock {
   display: inline-block;
