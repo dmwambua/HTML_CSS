@@ -16,30 +16,44 @@
     background-color: steelblue;
     line-height: 100px;
     color: khaki;
+    text-align: center;
   }
   
   h2 {
     margin: 10px;
+    text-align: center;
   }
-  
+ 
   /* App Container */
   .container {
     border: 2px solid snow;
+    display: flex;
   }
   
   /* To Do Section */
   .week {
+    display: inline-flex;
+    flex-grow: 3;
+    flex-direction: column;
   }
+
   
   .row {
     min-height: 200px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-items: center;
   }
   
   .square {
     width: 125px;
     height: 125px;
     padding: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    align-items: center;
   }
   
   .day.square {
@@ -61,6 +75,8 @@
   /* Reminders */
   .reminders {
     background-color: khaki;
+    display: inline-flex;
+    flex-grow: 2;
   }
   
   .reminders h3 {
@@ -70,7 +86,10 @@
     line-height: 90px;
     font-size: 24px;
   }
-  
+.square{
+    text-align: center;
+
+  }
   /* Footer */
   footer {
     font-size: 24px;
