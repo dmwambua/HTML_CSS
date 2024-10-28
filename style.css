@@ -106,7 +106,7 @@ if two values are used, they refer to first value is both top and botom, then se
 Sticky value is a position value that keeps an element in the document flow as the user scrolls*/
 
 #banner {
-  background-image: url(./Images/mountain-1.webp);
+  background-image: url(./Images/General_images/mountain-1.webp);
   background-size: cover;
   background-position: bottom center;
   width: 100%;
